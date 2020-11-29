@@ -1,0 +1,94 @@
+/*This code is by me Joshua W. And this Css file scales the device screen size
+as well as add animations to it.*/
+
+@media only screen and (max-width: 1500px){
+   body{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: visible;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    padding: 0;
+   }
+
+    nav{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 8vh;
+        border-radius: 0;
+    }    
+
+        #nav-color-bar{
+            display: none;
+        }
+
+        #nav-contents{
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+
+        #nav-contents li{
+            border-radius: 3px;
+        }
+
+#below-nav{
+    margin: 18% 2%;
+}
+
+  .template{
+      height: fit-content;
+      width: 100%;
+
+  }
+
+  .head-title{
+      margin: auto;
+      margin-bottom: 25px;
+      width: 50%; 
+  }
+
+  .box-content{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+  }
+
+   p, .contacts a{
+    font-size: 14pt;
+  }
+
+  .contacts p{
+      font-size: 13pt;
+  }
+
+  footer{
+      font-size: 10pt;
+  }
+
+    .bottom-credit{
+        margin: auto;
+    }
+
+
+@keyframes start-up { 
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes curved {
+    from { border-radius: 0%;}
+    to { border-radius: 50%; }
+}
+
+body{
+    animation: start-up 3s ease;
+}
+
+.portrait {
+    animation: curved 2s ease-in;
+}

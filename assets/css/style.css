@@ -1,0 +1,208 @@
+:root {
+    --backgroundColor: rgb(224, 215, 215);
+    --secondBackgroundColor: rgb(243, 247, 246);
+    --primaryColor: lightcoral;
+    --secondaryColor: rgb(140, 147, 148);
+    --tertiaryColor: rgb(63, 63, 63);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    width: auto;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+    margin:  0;
+}
+
+nav{
+    position: fixed;
+    display: inline-flex;
+    height: 50%;
+    background-color: var(--tertiaryColor);
+    border-radius: 0 10px 10px 0;
+    margin: auto;
+    box-shadow: rgb(114, 106, 106) 2px 2px 2px;
+}
+
+    #nav-color-bar{
+        background-color: salmon;
+        width: 1vh;
+    }
+
+    #nav-contents {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        list-style: none;
+        color: white;
+        padding: 20px;
+    }
+
+        #nav-contents li{
+            background-color: rgba(128, 128, 128, 0.315);
+            border-radius: 10px 0 0 10px;
+            padding: 10px;
+            translate: border-radius border-bottom 4 ease-in 5;
+            border-bottom: rgb(92, 92, 92) solid 4px;
+        }
+
+        #nav-contents li a{
+            color: white; 
+            text-decoration: none
+        }
+
+        #nav-contents li:visited, #nav-contents li:hover {
+            border-radius: 25px;
+            border-bottom: salmon solid 4px;
+        }
+
+#below-nav{
+    margin: 10% 19%;
+}
+
+#header{
+    text-align: center;
+    margin: 0 0 15% 0;
+}
+
+    #intro-title{
+        font-size: 40pt;
+    }
+
+    #intro-sub-title{
+        font-size: 16pt;
+        color: var(--secondaryColor);
+        width: fit-content;
+        margin: auto;
+    }
+
+.template{
+    background-color: white;
+    margin: auto;
+    height: fit-content;
+    width: 100vh;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  rgb(228, 223, 223)  4px 4px 4px;
+}
+
+    .sec {
+        margin: 6% auto;
+        padding: 2%;
+
+    }
+
+    .head-title::before{
+        background-color: red;
+        width: auto;
+        height: auto;
+        content: '';
+    }
+
+        .head-title{
+            font-size: 16pt;
+            background-color: var(--secondBackgroundColor);
+            border-radius: 25px;
+            width: fit-content;
+            margin: auto;
+            padding: 10px;
+        }
+                #head-icon{
+                    width: 20%;
+                    height: 20%;
+                    border-radius: 50% 50%;
+                }
+
+
+            .box-content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 4%;
+            }
+
+                #introduction{
+                    font-size: 14pt;
+                    text-align: left;
+                    color: var(--secondaryColor);
+                }
+
+                .portrait {
+                    border-radius: 50%;
+                }
+
+                    .box-content .portrait {
+                        border: 3px solid darkslategray;
+                        height: 30%;
+                        width: 30%;
+                    }
+
+                .projects{
+                    margin: 3%;
+                }
+
+                .projects img{
+                    height: 25vh;
+                    width: 25vh;
+                    border-radius: 10px;
+                    border: 3px inset var(--secondBackgroundColor);
+                    margin: 4%;
+                }
+
+                    .pro-title{
+                        font-size: large;
+                    }
+
+                    .projects .desc{
+                        color: var(--secondaryColor)
+                    }
+                
+            
+
+                .skill-box p{
+                    color: var(--primaryColor);
+                    text-align: left;
+                    background-color: var(--secondBackgroundColor);
+                    padding: 5px;
+                    border-radius: 6px;
+                    height: 8vh;
+                    width: 14em;
+                    margin: 1vh;
+                }
+
+                    #contact-info{
+                        display: flexbox;
+                        text-align: left;
+                        justify-content: left;
+                        align-items: left;
+                    }
+
+                    .contacts{
+                        display: flex;
+                        align-items: center;
+                        margin: 3%;
+                        padding: 10px;
+                        background-color: var(--secondBackgroundColor);
+                        border-radius: 6px;
+                    }
+
+    .icon-box{
+        padding: 12px;
+        text-align: left;
+    }
+
+footer{
+    background-color: var(--tertiaryColor);
+    color: white;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+}
