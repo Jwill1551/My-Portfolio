@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/devScale.css">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+        crossorigin="anonymous"></script>
     <title>Joshua's Portfolio</title>
 </head>
 
@@ -20,7 +24,12 @@
             <li><a href="#qualifications" alt="skills"> Skills </a></li>
 
             <li><a href="#contact-me" alt="contacts"> Contact </a></li>
+
+            <button class="btn" id="night-btn"> Night </button>
+            <button class="btn" id="day-btn"> Day </button>
         </ul>
+
+        
     </nav>
     
   <div id="below-nav">
@@ -104,7 +113,7 @@
     
     <section class="sec" id="qualifications">
         <p class="head-title"> Skills </p>
-            <div class="box-content">
+            <div class="box-content" id="qual-box">
                 
                 <div class="skill-box">
                     <span class="skill-title">
@@ -115,7 +124,7 @@
                         <h4> Frontend </h4>
                     </span>
 
-                    <p> Javascript, EJS, HTML5/CSS3, Sass, Mobile Responsive Design </p>
+                    <p class="details"> Javascript, EJS, HTML5/CSS3, jQuery, Sass, Mobile Responsive Design, JavaEE</p>
                 </div>
 
                 <div class="skill-box">
@@ -125,7 +134,7 @@
                         <h4> Backend </h4>
                     </span>
 
-                    <p> Node.js, Express.js, Firebase, Postman</p>
+                    <p class="details"> Node.js, Express.js, Firebase, Postman, PostgreSQL, MySQL</p>
                 </div>
 
                 <div class="skill-box">
@@ -137,7 +146,7 @@
                         <h4> Frameworks </h4>
                     </span>
 
-                    <p> RESTful Routes, APIs, React.js, Vue.js</p>
+                    <p class="details"> RESTful Routes, APIs, React.js, Vue.js</p>
                 </div>
                 
                 <div class="skill-box">
@@ -149,7 +158,7 @@
                         <h4> Programming Languages </h4>
                     </span>
 
-                    <p> Java, C#, C++, PHP, Python</p>
+                    <p class="details"> Java, C#, C++, PHP, Python</p>
                 </div>
             </div>
     </section>
@@ -162,20 +171,20 @@
                 <div id="contact-info">
 
                     <div class="contacts">
-                        <p> GitHub - <a href="https://github.com/Jwill1551" alt="This is my github"> github.com/Jwill1551 </a></p> 
+                         <a href="https://github.com/Jwill1551" alt="This is my github"><img src="https://img.icons8.com/material-outlined/64/000000/github.png"/></a>
                     </div>
                     
                     <div class="contacts">
-                        <p> Linkedin - <a href="https://www.linkedin.com/in/joshua-williams-933498184/" alt="This is my linkedin"> linkedin.com/in/joshua-williams-933498184/ </a></p>
+                         <a href="https://www.linkedin.com/in/joshua-williams-933498184/" alt="This is my linkedin"><img src="https://img.icons8.com/color/64/000000/linkedin.png"/></a>
                     </div>
 
                     <div class="contacts">
-                        <p> Student Profile - <a href="https://gcu-csm.symplicity.com/profiles/joshua.williams" alt="This is my student profile"> gcu-csm.symplicity.com/profiles/joshua.williams </a></p>
+                        <p><a href="https://gcu-csm.symplicity.com/profiles/joshua.williams" alt="This is my student profile"><img src="https://img.icons8.com/ios-glyphs/64/000000/student-center.png"/></a></p>
                         
                     </div>
 
                     <div class="contacts">
-                        <p> Email -  <a href="mailto:d.willjoshua@gmail.com" alt="This is my email"> d.willjoshua@gmail.com </a></p>
+                        <p><a href="mailto:d.willjoshua@gmail.com" alt="This is my email"><img src="https://img.icons8.com/fluent/64/000000/email-open.png"/></a></p>
                     </div>
 
                 </div>
@@ -209,6 +218,7 @@
       <p id="copyright"> Copyright &copy 2020 Joshua's Portfolio. All Rights   Reserved</p>
   </footer>
 
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

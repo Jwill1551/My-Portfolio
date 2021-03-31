@@ -46,10 +46,14 @@ as well as add animations to it.*/
 
   }
 
+  #introduction{
+      margin: 5%;
+  }
+
   .head-title{
       margin: auto;
       margin-bottom: 25px;
-      width: 50%; 
+      width: 25%; 
   }
 
   .box-content{

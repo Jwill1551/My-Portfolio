@@ -27,7 +27,6 @@ nav{
     background-color: var(--tertiaryColor);
     border-radius: 0 10px 10px 0;
     margin: auto;
-    box-shadow: rgb(114, 106, 106) 2px 2px 2px;
 }
 
     #nav-color-bar{
@@ -60,6 +59,18 @@ nav{
         #nav-contents li:visited, #nav-contents li:hover {
             border-radius: 25px;
             border-bottom: salmon solid 4px;
+        }
+
+        #night-btn, #day-btn{
+            border: 3px salmon solid;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.315);
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #day-btn{
+            border: 3px rgb(22, 158, 255) solid;
         }
 
 #below-nav{
@@ -109,7 +120,7 @@ nav{
             font-size: 16pt;
             background-color: var(--secondBackgroundColor);
             border-radius: 25px;
-            width: fit-content;
+            width: 5em;
             margin: auto;
             padding: 10px;
         }
@@ -130,7 +141,11 @@ nav{
                 #introduction{
                     font-size: 14pt;
                     text-align: left;
-                    color: var(--secondaryColor);
+                    color: var(--tertiaryColor);
+                    background-color: rgb(247, 247, 247);
+                    padding: 8px;
+                    border-radius: 10px;
+                    margin-right: 1em;
                 }
 
                 .portrait {
@@ -170,25 +185,26 @@ nav{
                     text-align: left;
                     background-color: var(--secondBackgroundColor);
                     padding: 5px;
-                    border-radius: 6px;
-                    height: 8vh;
+                    border-radius: 8px;
+                    height: 11vh;
                     width: 14em;
-                    margin: 1vh;
+                    margin: 1em;
+                }
+
+                #qual-box{
+                    display: flex;
+                    flex-wrap: wrap;
                 }
 
                     #contact-info{
-                        display: flexbox;
-                        text-align: left;
-                        justify-content: left;
-                        align-items: left;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
 
                     .contacts{
-                        display: flex;
                         align-items: center;
-                        margin: 3%;
-                        padding: 10px;
-                        background-color: var(--secondBackgroundColor);
+                        margin: 3% 4%;
                         border-radius: 6px;
                     }
 
