@@ -1,278 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua Williams | Welcome to my Portfolio</title>
-    <!--Bootstrap 4 CSS & My Stylesheets-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="src/style/CSS/style.css" />
-    <link rel="stylesheet" href="src/style/CSS/devScale.css" />
-    <!--Javascript & jQuery Scripts-->
-    <script src="https://kit.fontawesome.com/614f5b4e8f.js" crossorigin="anonymous"></script>
-  </head>
-
-  <body>
-    <!--Navbar and styled buttons-->
-    <nav class="navbar">
-      <div id="nav-logo">
-        
-      </div>
-      <ul
-        id="nav-menu"
-        class="d-flex justify-content-around align-items-center w-100"
-      >
-        <li class="nav-items"><a class="btn-nav" href="#main-info">About</a></li>
-        <li class="nav-items"><a class="btn-nav" href="#project-sec">Projects</a></li>
-        <li class="nav-items"><a class="btn-nav" href="#skill-sec">Skills</a></li>
-        <li class="nav-items"><a class="btn-nav" href="#contact-sec">Contact</a></li>
-      </ul>
-    </nav>
-
-    <section id="intro-sec" class="container">
-
-      <div id="intro-title">
-        <h1>Joshua Williams</h1>
-        <p>
-          A Software Engineer, <br />
-          and Fullstack Web Developer, <br />
-          who likes programming and being creative.
-        </p>
-      </div>
-    </section>
-
-    <section id="info-sec" class="container">
-      <div id="main-info" class="content-box">
-        <h4 class="box-title d-flex justify-content-around align-items-center flex-column-reverse">About <i class="fas fa-user-alt"></i> </h4>
-
-        <div id="about-content">
-          <p>
-            Hello! My name is Joshua Williams and I am a Software Developer &
-            Fullstack Web Developer with a passion for technology and software.
-            Currently I am pursuing a bachelor's degree in Software Development
-            at Grand Canyon University. My course work consists of the
-            fundamentals of algorithms, web development, object-oriented design,
-            data structures, and other IT disciplines. I am fascinated by mobile
-            development, and programming languages that are used to create apps
-            such as kotlin and swift. Along with that I am also interested in
-            graphic design that can support the frontend of web applications. In
-            my free time I like to read and study theology, graphic design, and
-            code on the side for fun. Feel free to contact me at
-            d.willjoshua@gmail.com.
-          </p>
-
-          <div id="intro-pic">
-            <img src="https://github.com/Jwill1551/My-Portfolio/blob/master/src/assets/img/my-portrait.jpeg?raw=true" alt="" />
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/style/CSS/style.css">
+</head>
+<body>
+  <div class="main_content">
+    <div id="header">
+      <div class="navbar">
+        <div class="navbar__menu">
+          <ul class="navbar__menu--items">
+            <li class="nav_items">About</li>
+            <li class="nav_items">Projects</li>
+            <li class="nav_items">Skills</li>
+            <li class="nav_items">Contact</li>
+          </ul>
         </div>
-
-        <div id="about-bottom">
-          <p>If you would like a copy of my resume please click on the button <i class="fas fa-arrow-right"></i></p> 
-          <a href="src/assets/files/Modern Clean Software Developer Resume CV .pdf" class="btn btn-design"> My Resume </a>
+        <div class="navbar__bottom">
+          <!-- Will place different content here, like my career profiles or links to various things -->
         </div>
       </div>
-
-      <div id="project-sec" class="content-box">
-        <h4 class="box-title d-flex justify-content-around align-items-center flex-column-reverse">Projects <i class="fas fa-code"></i></h4>
-
-        <div class="row d-flex flex-wrap projects">
-          
-          <div class="col">
-            <a href="https://jwill1551.github.io/Bolt-Note/" class="project-cards">
-              <img
-                src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1896&q=80"
-                alt=""
-                class="img-fluid"
-              />
-
-              <div class="project-bottom">
-                <h3 id="p-title-1" class="project-title">Bolt Note ⚡</h3>
-                <p id="p-desc-1" class="project-desc">
-                  My Final Senior Capstone Project that is a simplistic note taking application that allows user to save information quickly at a moments notice.
-                </p>
-              </div>
-            </a>
+    </div>
+    <div class="portfolio_sections">
+      <section class="portfolio_section container ptf_about">
+        <div class="ptf_about__main">
+          <div class="ptf_about--title">
+            <h1>Joshua Williams</h1>
+            <span>A Fullstack Developer</span>
           </div>
-
-
-          <div class="col">
-            <a href="https://smapchat-a4e62.web.app/" class="project-cards">
-              <img
-                src="src/assets/img/Buddy-Chat.gif"
-                alt=""
-                class="img-fluid"
-              />
-
-              <div class="project-bottom">
-                <h3 id="p-title-1" class="project-title">Web Chat App</h3>
-                <p id="p-desc-1" class="project-desc">
-                  The Buddy-Chat app allows users to share messages and images
-                  locally on a firebase server. Users can login with their google
-                  account.
-                </p>
-              </div>
-            </a>
+          <div class="ptf_about--profile">
+            <img src="" alt="" class="ptf_about--profile__img">
+            <div class="ptf_about--profile__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris quis dui turpis. Nunc consectetur mi non pulvinar
+                 tempor. Praesent placerat id eros eget sodales. Nunc
+                quis risus non ligula pretium viverra eget in tortor.</p>
+            </div>
           </div>
-
-          <div class="col">
-            <a href="https://josh-snake-game.glitch.me/game.html" class="project-cards">
-              <img src="src/assets/img/Snake.png" alt="" class="img-fluid" />
-
-              <div class="project-bottom">
-                <h3 id="p-title-1" class="project-title">Snake Game</h3>
-                <p id="p-desc-1" class="project-desc">
-                  A Snake game developed and structured in glitch, using the
-                  programming languages Javascript, HTML5, and CSS3.
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="https://otriviagame.herokuapp.com/" class="project-cards">
-              <img
-                src="src/assets/img/Otrivia Game - Poster.gif"
-                alt=""
-                class="img-fluid"
-              />
-
-              <div class="project-bottom">
-                <h3 id="p-title-1" class="project-title">Trivia Game</h3>
-                <p id="p-desc-1" class="project-desc">
-                  A Web app developed by me and a group of peers using a Trivia
-                  API, along with Javascript, EJS, HTML5, CSS3 and Sass.
-                </p>
-              </div>
-            </a>
-          </div>
+          <button class="btn neon_btn">Download Button</button>
         </div>
-      </div>
-
-      <div id="skill-sec" class="content-box">
-        <h4 class="box-title d-flex justify-content-around align-items-center flex-column-reverse">Skills <i class="fab fa-html5"></i></h4>
-
-        <div class="skills-box">
-          <div id="WD-Skills" class="row">
-            <div class="col">
-              <h5>Frontend & Backend</h5>
-
-              <ul class="skill-list">
-                <li>HTML5</li>
-                <li>Mobile Reposnisve</li>
-                <li>CSS3</li>
-                <li>Sass</li>
-                <li>BulmaCSS</li>
-                <li>Javascript</li>
-                <li>Springboot</li>
-                <li>PostegresSQL</li>
-                <li>Bootstrap4</li>
-                <li>jQuery</li>
-                <li>XML</li>
-                <li>JSON</li>
-                <li>Vue.Js</li>
-                <li>ReactJs</li>
-                <li>EJS</li>
-              </ul>
-            </div>
-
-            <div class="col">
-              <h5>Web Tools</h5>
-
-              <ul class="skill-list">
-                <li>Node.Js</li>
-                <li>Express.Js</li>
-                <li>Firebase</li>
-                <li>Postman</li>
-                <li>Heroku</li>
-                <li>Azure</li>
-                <li>AWS</li>
-                <li>JavaEE</li>
-                <li>Springboot</li>
-                <li>MongoDB</li>
-                <li>MySql</li>
-                <li>MAMP</li>
-                <li>NPM & Bower</li>
-                <li>Jekyll / Grunt</li>
-              </ul>
-            </div>
-          </div>
-
-          <div id="SD-Skills" class="row">
-            <div class="col">
-              <h5>Programming Languages</h5>
-
-              <ul class="skill-list">
-                <li>Java</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>C++</li>
-                <li>Objective C</li>
-              </ul>
-            </div>
-
-            <div class="col">
-              <h5>Tools</h5>
-
-              <ul class="skill-list">
-                <li>Command Console</li>
-                <li>Powershell</li>
-                <li>Windows 10</li>
-                <li>MacOs</li>
-                <li>Linux (Ubuntu)</li>
-                <li>VirtualBox</li>
-                <li>Eclipse</li>
-                <li>Terminal</li>
-                <li>VsCode</li>
-                <li>Atom</li>
-              </ul>
-
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="contact-sec" class="content-box">
-        <h4 class="box-title d-flex align-items-center flex-column-reverse">Contact <i class="fas fa-address-card"></i></h4>
-
-        <div class="contact-items">
-          <a href="https://github.com/Jwill1551" target="_blank" class="btn btn-contact">Github <i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/joshua-williams-933498184/" target="_blank" class="btn btn-contact">Linkedin <i class="fab fa-linkedin"></i></a>
-          <a href="https://gcu-csm.symplicity.com/profiles/joshua.williams" target="_blank" class="btn btn-contact">School Profile <i class="fas fa-user-circle"></i></a>
-          <a href="mailto: d.willjoshua@gmail.com" target="_blank" class="btn btn-contact">E-mail <i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>Created by: Joshua D. Williams</p>
-      <p>
-        Copyright <i class="fas fa-copyright"></i> 2020 My Protfolio. All Rights
-        Reserved
-      </p>
-    </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="src/script/script.js"></script>
-  </body>
+      </section>
+      <section class="portfolio_section container ptf_projects"></section>
+      <section class="portfolio_section container ptf_skills"></section>
+      <section class="portfolio_section container ptf_contact"></section>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
