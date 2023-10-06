@@ -1,0 +1,54 @@
+// Global Variables, Function, and Mixins
+/*** Colors ***/
+$darkGray: #2B2F33;
+$grayBlue: #475B79;
+$lightGreen: #4BE6AD;
+$lightGrey: #CCCCCC;
+$concrete: #E2E2E2;
+$charcoal: #242C37;
+$midnight: #212428;
+$white: #FFFFFF;
+
+/*** Sizing & Spacing ***/
+$gutter: 16px;
+
+/*** Other Mixins & Functions ***/
+@function generateNewGB($color1, $color2, $color3, $deg, $per1, $per2, $per3) {
+    $gradientBackground: linear-gradient($deg, rgba($color1) $per1, rgba($color2) $per2, rgba($color3) $per2);
+
+    @return $gradientBackground;
+}
+
+@mixin gradientBackground {
+   background: generateNewGB($charcoal, (36,49,72,0.88), (114,121,132,0.75), 100deg, 0%, 35%, 100%);
+}
+
+@mixin genSpacingClasses($n) {
+   @for $_ from 0 to $n {
+    .p-#{$n} { padding: ($n * 10); }
+    .pr-#{$n} { padding-right: ($n * 10); }
+    .pl-#{$n} { padding-left: ($n * 10); }
+    .px-#{$n} { 
+        padding-left: ($n * 10);
+        padding-right: ($n * 10);
+    }
+    .py-#{$n} {
+        padding-top: ($n * 10);
+        padding-bottom: ($n * 10);;
+    }
+
+    .m-#{$n} { margin: ($n * 10); }
+    .mr-#{$n} { margin-right: ($n * 10); }
+    .ml-#{$n} { margin-left: ($n * 10); }
+    .mx-#{$n} { 
+        margin-left: ($n * 10);
+        margin-right: ($n * 10);
+    }
+    .my-#{$n} {
+        margin-top: ($n * 10);
+        margin-bottom: ($n * 10);;
+    }
+   } 
+}
+
+
