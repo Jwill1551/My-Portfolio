@@ -24,31 +24,33 @@ $gutter: 16px;
 }
 
 @mixin genSpacingClasses($n) {
-   @for $_ from 0 to $n {
-    .p-#{$n} { padding: ($n * 10); }
-    .pr-#{$n} { padding-right: ($n * 10); }
-    .pl-#{$n} { padding-left: ($n * 10); }
+   @for $n from 0 through $n {
+    .p-#{$n} { padding: ($n * 10px) !important; }
+    .pr-#{$n} { padding-right: ($n * 10px) !important; }
+    .pl-#{$n} { padding-left: ($n * 10px) !important; }
     .px-#{$n} { 
-        padding-left: ($n * 10);
-        padding-right: ($n * 10);
+        padding-left: ($n * 10px) !important;
+        padding-right: ($n * 10px) !important;
     }
     .py-#{$n} {
-        padding-top: ($n * 10);
-        padding-bottom: ($n * 10);;
+        padding-top: ($n * 10px) !important;
+        padding-bottom: ($n * 10px) !important;
     }
 
-    .m-#{$n} { margin: ($n * 10); }
-    .mr-#{$n} { margin-right: ($n * 10); }
-    .ml-#{$n} { margin-left: ($n * 10); }
+    .m-#{$n} { margin: ($n * 10px) !important; }
+    .mr-#{$n} { margin-right: ($n * 10px) !important; }
+    .ml-#{$n} { margin-left: ($n * 10px) !important; }
     .mx-#{$n} { 
-        margin-left: ($n * 10);
-        margin-right: ($n * 10);
+        margin-left: ($n * 10px) !important;
+        margin-right: ($n * 10px) !important;
     }
     .my-#{$n} {
-        margin-top: ($n * 10);
-        margin-bottom: ($n * 10);;
+        margin-top: ($n * 10px) !important;
+        margin-bottom: ($n * 10px) !important;
     }
    } 
 }
 
-
+* {
+    @include genSpacingClasses(30);
+}
