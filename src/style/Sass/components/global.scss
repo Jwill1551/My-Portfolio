@@ -28,6 +28,8 @@ $gutter: 16px;
     .p-#{$n} { padding: ($n * 10px) !important; }
     .pr-#{$n} { padding-right: ($n * 10px) !important; }
     .pl-#{$n} { padding-left: ($n * 10px) !important; }
+    .pt-#{$n} { padding-top: ($n * 10px) !important; }
+    .pb-#{$n} { padding-bottom: ($n * 10px ) !important; }
     .px-#{$n} { 
         padding-left: ($n * 10px) !important;
         padding-right: ($n * 10px) !important;
@@ -40,6 +42,8 @@ $gutter: 16px;
     .m-#{$n} { margin: ($n * 10px) !important; }
     .mr-#{$n} { margin-right: ($n * 10px) !important; }
     .ml-#{$n} { margin-left: ($n * 10px) !important; }
+    .mt-#{$n} { margin-top: ($n * 10px) !important; }
+    .mb-#{$n} { margin-bottom: ($n * 10px ) !important; }
     .mx-#{$n} { 
         margin-left: ($n * 10px) !important;
         margin-right: ($n * 10px) !important;
