@@ -1,32 +1,6 @@
-#side-navbar {
-  height: 100%;
-  width: 140px;
-  background: #2B2F33;
-  color: white;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-#side-navbar .navbar {
-  flex-direction: column;
-}
-#side-navbar .navbar--top {
-  border-bottom: white solid 1px;
-}
-#side-navbar .navbar--top .nav-primary .nav-menu {
-  list-style: none;
-  padding: 0;
-}
-#side-navbar .navbar--top .nav-primary .nav-menu .nav_items {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#side-navbar .navbar--top .nav-primary .nav-menu .nav_items.active {
-  color: #4BE6AD !important;
-}
 /*** Colors ***/
 /*** Sizing & Spacing ***/
+/*** Misc Styles ***/
 /*** Other Mixins & Functions ***/
 * .p-0 {
   padding: 0px !important;
@@ -1453,6 +1427,97 @@
 * .my-30 {
   margin-top: 300px !important;
   margin-bottom: 300px !important;
+}
+* .rounded-0 {
+  border-radius: 0px !important;
+}
+* .rounded-1 {
+  border-radius: 5px !important;
+}
+* .rounded-2 {
+  border-radius: 10px !important;
+}
+* .rounded-3 {
+  border-radius: 15px !important;
+}
+* .rounded-4 {
+  border-radius: 20px !important;
+}
+* .rounded-5 {
+  border-radius: 25px !important;
+}
+
+#side-navbar {
+  height: 100%;
+  width: 140px;
+  background: #2B2F33;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#side-navbar .navbar {
+  flex-direction: column;
+}
+#side-navbar .navbar--top {
+  border-bottom: white solid 1px;
+}
+#side-navbar .navbar--top .nav-primary .nav-menu {
+  list-style: none;
+  padding: 0;
+}
+#side-navbar .navbar--top .nav-primary .nav-menu .nav_items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#side-navbar .navbar--top .nav-primary .nav-menu .nav_items.active {
+  color: #4BE6AD !important;
+}
+.ptf_about {
+  background-color: #242C37;
+  height: 100vh;
+}
+.ptf_about__main--title h1 {
+  font-weight: 500;
+  color: #4BE6AD;
+  text-transform: uppercase;
+}
+.ptf_about__main--title span {
+  color: #CCCCCC;
+  font-style: italic;
+}
+.ptf_about__main .neon_btn {
+  border: #4BE6AD solid 2px;
+  color: #4BE6AD;
+}
+.ptf_about__main .neon_btn:hover {
+  background-color: #4BE6AD;
+  color: #242C37;
+}
+.ptf_about__main .btn {
+  padding: 8px 15px;
+}
+.ptf_about--profile__desc {
+  background-color: #212428;
+}
+.ptf_about--profile__desc p {
+  color: #CCCCCC !important;
+}
+.ptf_about .portrait_cr {
+  border: #4BE6AD solid 2px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+.ptf_about .portrait_cr img {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

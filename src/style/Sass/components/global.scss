@@ -12,6 +12,9 @@ $white: #FFFFFF;
 /*** Sizing & Spacing ***/
 $gutter: 16px;
 
+/*** Misc Styles ***/
+
+
 /*** Other Mixins & Functions ***/
 @function generateNewGB($color1, $color2, $color3, $deg, $per1, $per2, $per3) {
     $gradientBackground: linear-gradient($deg, rgba($color1) $per1, rgba($color2) $per2, rgba($color3) $per2);
@@ -55,6 +58,13 @@ $gutter: 16px;
    } 
 }
 
+@mixin genMiscClasses($n) {
+    @for $n from 0 through $n {
+     .rounded-#{$n} { border-radius: ($n * 5px) !important; }
+    } 
+ }
+
 * {
     @include genSpacingClasses(30);
+    @include genMiscClasses(5);
 }
