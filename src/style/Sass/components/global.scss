@@ -29,6 +29,16 @@ $gutter: 16px;
 @mixin genSpacingClasses($n) {
    @for $n from 0 through $n {
     .p-#{$n} { padding: ($n * 10px) !important; }
+    .p-lg-#{$n} {
+
+    }
+    .p-md-#{$n} {
+
+    }
+    .p-sm-#{$n} {
+        
+    }
+
     .pr-#{$n} { padding-right: ($n * 10px) !important; }
     .pl-#{$n} { padding-left: ($n * 10px) !important; }
     .pt-#{$n} { padding-top: ($n * 10px) !important; }

@@ -45,7 +45,7 @@
     }
 
     .portrait_cr {
-        border: #4BE6AD solid 2px;
+        border: #242C37 solid 4px;
         width: fit-content;
         height: fit-content;
         border-radius: 50%;
@@ -58,6 +58,19 @@
             max-width: 250px;
             max-height: 250px;
             margin: 5px;
+        }
+
+        &::after {
+            content: "";
+            border: solid 4px #4BE6AD;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 50%;
         }
     }
 }
