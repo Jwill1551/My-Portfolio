@@ -11,9 +11,22 @@ $white: #FFFFFF;
 
 /*** Sizing & Spacing ***/
 $gutter: 16px;
+$breakpoint--desktop: 1020px;
+$breakpoint--tablet: 768px;
+$breakpoint--mobile: 300px;
 
-/*** Misc Styles ***/
+/*** Display Styles ***/
+@media (min-width: $breakpoint--mobile) { 
+    .sm-hide { display: none !important; }
+}
 
+@media (min-width: $breakpoint--tablet) { 
+    .md-hide { display: none !important; }
+}
+
+@media (min-width: $breakpoint--desktop) { 
+    .lg-hide { display: none !important; }
+}
 
 /*** Other Mixins & Functions ***/
 @function generateNewGB($color1, $color2, $color3, $deg, $per1, $per2, $per3) {
@@ -29,16 +42,6 @@ $gutter: 16px;
 @mixin genSpacingClasses($n) {
    @for $n from 0 through $n {
     .p-#{$n} { padding: ($n * 10px) !important; }
-    .p-lg-#{$n} {
-
-    }
-    .p-md-#{$n} {
-
-    }
-    .p-sm-#{$n} {
-        
-    }
-
     .pr-#{$n} { padding-right: ($n * 10px) !important; }
     .pl-#{$n} { padding-left: ($n * 10px) !important; }
     .pt-#{$n} { padding-top: ($n * 10px) !important; }
@@ -50,6 +53,99 @@ $gutter: 16px;
     .py-#{$n} {
         padding-top: ($n * 10px) !important;
         padding-bottom: ($n * 10px) !important;
+    }
+
+    // Padding & Margin Sizes For Desktop
+    @media (min-width: $breakpoint--desktop) {
+        .p-lg-#{$n} { padding: ($n * 10px) !important; }
+        .pr-lg-#{$n} { padding-right: ($n * 10px) !important; }
+        .pl-lg-#{$n} { padding-left: ($n * 10px) !important; }
+        .pt-lg-#{$n} { padding-top: ($n * 10px) !important; }
+        .pb-lg-#{$n} { padding-bottom: ($n * 10px ) !important; }
+        .px-lg-#{$n} { 
+            padding-left: ($n * 10px) !important;
+            padding-right: ($n * 10px) !important;
+        }
+        .py-lg-#{$n} {
+            padding-top: ($n * 10px) !important;
+            padding-bottom: ($n * 10px) !important;
+        }
+
+        .m-lg-#{$n} { margin: ($n * 10px) !important; }
+        .mr-lg-#{$n} { margin-right: ($n * 10px) !important; }
+        .ml-lg-#{$n} { margin-left: ($n * 10px) !important; }
+        .mt-lg-#{$n} { margin-top: ($n * 10px) !important; }
+        .mb-lg-#{$n} { margin-bottom: ($n * 10px ) !important; }
+        .mx-lg-#{$n} { 
+            margin-left: ($n * 10px) !important;
+            margin-right: ($n * 10px) !important;
+        }
+        .my-lg-#{$n} {
+            margin-top: ($n * 10px) !important;
+            margin-bottom: ($n * 10px) !important;
+        }
+    }
+
+    // Padding & Margin Sizes For Tablet
+    @media (min-width: $breakpoint--tablet) {
+        .p-md-#{$n} { padding: ($n * 10px) !important; }
+        .pr-md-#{$n} { padding-right: ($n * 10px) !important; }
+        .pl-md-#{$n} { padding-left: ($n * 10px) !important; }
+        .pt-md-#{$n} { padding-top: ($n * 10px) !important; }
+        .pb-md-#{$n} { padding-bottom: ($n * 10px ) !important; }
+        .px-md-#{$n} { 
+            padding-left: ($n * 10px) !important;
+            padding-right: ($n * 10px) !important;
+        }
+        .py-md-#{$n} {
+            padding-top: ($n * 10px) !important;
+            padding-bottom: ($n * 10px) !important;
+        }
+
+        .m-md-#{$n} { margin: ($n * 10px) !important; }
+        .mr-md-#{$n} { margin-right: ($n * 10px) !important; }
+        .ml-md-#{$n} { margin-left: ($n * 10px) !important; }
+        .mt-md-#{$n} { margin-top: ($n * 10px) !important; }
+        .mb-md-#{$n} { margin-bottom: ($n * 10px ) !important; }
+        .mx-md-#{$n} { 
+            margin-left: ($n * 10px) !important;
+            margin-right: ($n * 10px) !important;
+        }
+        .my-md-#{$n} {
+            margin-top: ($n * 10px) !important;
+            margin-bottom: ($n * 10px) !important;
+        }
+    }
+
+    // Padding & Margin Sizes For Mobile
+    @media (min-width: $breakpoint--mobile) {
+        .p-sm-#{$n} { padding: ($n * 10px) !important; }
+        .pr-sm-#{$n} { padding-right: ($n * 10px) !important; }
+        .pl-sm-#{$n} { padding-left: ($n * 10px) !important; }
+        .pt-sm-#{$n} { padding-top: ($n * 10px) !important; }
+        .pb-sm-#{$n} { padding-bottom: ($n * 10px ) !important; }
+        .px-sm-#{$n} { 
+            padding-left: ($n * 10px) !important;
+            padding-right: ($n * 10px) !important;
+        }
+        .py-sm-#{$n} {
+            padding-top: ($n * 10px) !important;
+            padding-bottom: ($n * 10px) !important;
+        }
+
+        .m-sm-#{$n} { margin: ($n * 10px) !important; }
+        .mr-sm-#{$n} { margin-right: ($n * 10px) !important; }
+        .ml-sm-#{$n} { margin-left: ($n * 10px) !important; }
+        .mt-sm-#{$n} { margin-top: ($n * 10px) !important; }
+        .mb-sm-#{$n} { margin-bottom: ($n * 10px ) !important; }
+        .mx-sm-#{$n} { 
+            margin-left: ($n * 10px) !important;
+            margin-right: ($n * 10px) !important;
+        }
+        .my-sm-#{$n} {
+            margin-top: ($n * 10px) !important;
+            margin-bottom: ($n * 10px) !important;
+        }
     }
 
     .m-#{$n} { margin: ($n * 10px) !important; }
