@@ -6019,4 +6019,15 @@
   border-radius: 50%;
 }
 
+.ptf_projects {
+  background: rgb(36, 44, 55);
+  background: linear-gradient(180deg, rgb(36, 44, 55) 0%, rgba(36, 49, 72, 0.88) 37%, rgba(27, 40, 62, 0.61) 75%, rgba(114, 121, 132, 0.69) 100%);
+}
+.ptf_projects__title h2::before {
+  content: "";
+}
+.ptf_projects__title h2::after {
+  content: "";
+}
+
 /*# sourceMappingURL=style.css.map */
